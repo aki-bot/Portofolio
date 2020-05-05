@@ -23,6 +23,8 @@
     <!-- Page content -->
 {{-- <h1　class="">戻らない１日をもっと大切に</h1> --}}
 </main>
+
+
 <div class="container">
     <hr color="#c0c0c0">
     @if (!is_null($headline))
@@ -42,12 +44,26 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+                        {{--formタグには①actionで実際にどこに保存して次のリンク先はどうするのかを指定②methodでgetかpostかを指定（一緒にURLを送りたくないのでここはほぼpost③enctypeは一般的なフォームでは特には指定しない。使う時にはデータをURLエンコードして送信）--}}
                         <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
+                        <form action="{{ action('LikesController@create') }}" method="post" enctype="multipart/form-data">
+                            {{--ここでnoteのIDを渡している--}}
+                            <input type="hidden" name="note_id" value="{{ $headline->id }}">
+                            <button class="border-0 bg-transparent"><i class="far fa-heart"></i></button>
+                            {{--countで$feadlineにある--}}
+                            {{  count($headline->likes) }}
+                            
+                            @csrf
+                        </form>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
     @endif
+
+
     <hr color="#c0c0c0">    
     {{-- <div class="row"> --}}
         <div class="posts col-md-8 mx-auto mt-3">
@@ -63,6 +79,13 @@
                             </div>
                             <div class="body mt-3">
                                 {{ str_limit($post->body, 1500) }}
+                                <form action="{{ action('LikesController@create') }}" method="post" enctype="multipart/form-data">
+                                    {{--ここでnoteのIDを渡している--}}
+                                    <input type="hidden" name="note_id" value="{{ $post->id }}">
+                                    <button class="border-0 bg-transparent"><i class="far fa-heart"></i></button>
+                                    {{  count($post->likes) }}
+                                    @csrf
+                                </form>
                             </div>
                         </div>
                         <div class="image col-md-6 text-right mt-4">
@@ -75,7 +98,7 @@
                 <hr color="#c0c0c0">
             @endforeach
         </div>
-    {{-- </div> --}}
+    </div>
 </div>
 <footer>
     <div class="container text-center">

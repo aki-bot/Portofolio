@@ -36,3 +36,5 @@ Route::post('contact/create','ContactController@create');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('like/create','LikesController@create');

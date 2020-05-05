@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Note extends Model
 {
     protected $guarded = array('id');
@@ -13,4 +14,14 @@ class Note extends Model
         'title' => 'required',
         'body' => 'required',
     );
+
+    //モデルにあるメゾット8行めで指定してあるから使える
+    //ノートから見て「俺はlikeをたくさん持っている」
+    //likesテーブルが持っているnote_id=自分のidのこと、にあるlikesの情報を持ってきてくれる
+    //いくつか投稿されているnoteから見て複数のlikesがあることをLaravelの機能では自動的に持ってきてくれる
+    //select * from likes　where note_id=noteModelのidのこと
+    public function likes()
+    {
+        return $this->hasMany('App\Like');
+    }
 }

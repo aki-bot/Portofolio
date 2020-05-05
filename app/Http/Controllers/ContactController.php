@@ -32,5 +32,6 @@ class ContactController extends Controller
       return redirect('profile/index');
       //('profile/index?contact=contact');
       //?はパラメーターの追加
+    
   }
 }

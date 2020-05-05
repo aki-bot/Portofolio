@@ -132,8 +132,7 @@ Spanizer
       letters: $('.js-spanize')
     },
     init: function init() {
-      s = this.settin;
-      gs;
+      s = this.settings;
       this.bindEvents();
     },
     bindEvents: function bindEvents() {

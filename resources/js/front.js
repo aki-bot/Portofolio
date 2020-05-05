@@ -28,32 +28,27 @@ function scrollChk(){
   //varはjavascriptの変数の宣言方法。「var 変数名＝値」。
   //$()の使い方
 
-  
-
-  /*-----
+/*-----
 Spanizer
 - Wraps letters with spans, for css animations
 -----*/
 (function($) {
-    var s,
-    spanizeLetters = {
-      settings: {
-        letters: $('.js-spanize'),
-      },
-      init: function() {
-        s = this.settin
-        
-        
-        gs;
-        this.bindEvents();
-      },
-      bindEvents: function(){
-        s.letters.html(function (i, el) {
-          //spanizeLetters.joinChars();
-          var spanizer = $.trim(el).split("");
-          return '<span>' + spanizer.join('</span><span>') + '</span>';
-        });
-      },
-    };
-    spanizeLetters.init();
-  })(jQuery);
+  var s,
+  spanizeLetters = {
+    settings: {
+      letters: $('.js-spanize'),
+    },
+    init: function() {
+      s = this.settings;
+      this.bindEvents();
+    },
+    bindEvents: function(){
+      s.letters.html(function (i, el) {
+        //spanizeLetters.joinChars();
+        var spanizer = $.trim(el).split("");
+        return '<span>' + spanizer.join('</span><span>') + '</span>';
+      });
+    },
+  };
+  spanizeLetters.init();
+})(jQuery);

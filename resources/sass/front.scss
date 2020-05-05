@@ -68,7 +68,7 @@ body {
 //     }
 // }
 
-.img-fluid{
+.about-img{
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -82,10 +82,10 @@ body {
     font-family: serif;
 }
 
-.about-detail{
-    padding: 0 0 0 150px;
+// .about-detail{
+//     padding: 0 0 0 150px;
     
-}
+// }
 
 .portfolio-title{
     text-align: center;
@@ -105,14 +105,19 @@ body {
 }
 
 .about-a{
+    
     border-bottom: solid 3px #fe8ca0;
     font-family: serif;
+    text-align: center;
+}
+.service-heading{
+  border-bottom: solid 3px #fe8ca0;
 }
 
 .about-p-wrapper{
     font-size: 15px;
     font-family: serif;
-    
+    text-align: center;
 }
 
 .service-detail{
@@ -171,48 +176,29 @@ body {
 .modal-title{
   font-family: serif;
 }
-このコードで写真をきれいにできる
+//このコードで写真をきれいにできる
 .portofolio1{
   object-fit: cover;
 }
 .portofolio2{
   object-fit: cover;
 }
-//cursive
+
 .background-title{
-  font-family: serif;
-  opacity:0.6;
-  padding: 150px 20px 0 700px;
-  font-size: 50px;
-  
+  opacity: 0.75;
+  color: black;
 }
 
 .background-title2{
-  font-family: serif;
-  opacity:0.6;
-  font-size: 50px;
-  padding: 0 20px 0 700px;
+  
+  opacity: 0.75;
+  color: black;
 }
-
 .background-title3{
-  font-family: serif;
-  opacity:0.6;
-  font-size: 30px;
-  padding: 0 20px 0 700px;
+  
+  opacity: 0.8;
+  color: black;
 }
-
-.background-title4{
-  font-family: serif;
-  opacity:0.6;
-  font-size: 30px;
-  padding: 0 20px 0 700px;
-}
-
-.footer-title{
-
-  font-family: serif;
-}
-
 
 //上書きすることで打ち消し合う
 .drawer-hamburger{
@@ -221,10 +207,18 @@ body {
   }
 }
 
+.modal-header .close{
+  &:focus{
+    outline: none;
+  }
+}
 
 
-
-//try
+//!important最優先にする意味
+//最終手段
+// .mast::after{
+//   background-color: transparent !important;  
+// }
 // Config: fonts
 $font-mono: "Cutive Mono", monospace;
 // Config: Ease
@@ -311,19 +305,22 @@ body {
 .mast{
   position: relative;
   display:flex;
-  align-items: center;
+  // align-items: center;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   color: #fff;
-  background-color: #111;
-  @include bg-overlay(#111, 0.9);  
+  background-image:url('/img/IMG_2666.jpg');
+  //背景画像の繰り返しを止めている
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size:100%;
   
   &__bg{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -366,5 +363,44 @@ body {
   0%   { opacity: 0; text-shadow: 0px 0px 1px rgba(255,255,255,0.1)}
   66%  { opacity: 1; text-shadow: 0px 0px 20px rgba(255,255,255,0.9) }
   77%   { opacity: 1;  }
-  100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)}
+  100% { opacity:0.7; text-shadow: 0px 0px 20px rgba(255,255,255,0.0)} 
 }
+
+//PC対応
+@media (min-width: 769px) {
+	.mast {
+    align-items: center;
+    height: 100vh;
+  }
+  .mast__header{
+padding: 30px 20px 400px 550px;
+  }
+  .background-title{
+    font-size: 30px;  
+  }
+  .background-title2{
+    font-size: 30px;
+  }
+  .background-title3{
+    font-size: 25px;
+  }
+}
+
+//スマホ対応
+@media (max-width: 768px) {
+	.mast {
+    height: 215px;
+    }
+    .background-title{
+      font-size: 10px;
+      
+    }
+    
+    .background-title2{
+      font-size: 10px;
+    }
+    .background-title3{
+      font-size: 10px;
+    }
+}
+

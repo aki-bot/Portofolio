@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body {
   color: #000;
 }
@@ -53,7 +51,7 @@ body {
   width: 250px;
 }
 
-.img-fluid {
+.about-img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
@@ -63,10 +61,6 @@ body {
   text-align: center;
   margin: 50px;
   font-family: serif;
-}
-
-.about-detail {
-  padding: 0 0 0 150px;
 }
 
 .portfolio-title {
@@ -90,11 +84,17 @@ body {
 .about-a {
   border-bottom: solid 3px #fe8ca0;
   font-family: serif;
+  text-align: center;
+}
+
+.service-heading {
+  border-bottom: solid 3px #fe8ca0;
 }
 
 .about-p-wrapper {
   font-size: 15px;
   font-family: serif;
+  text-align: center;
 }
 
 .service-detail {
@@ -152,7 +152,7 @@ body {
   font-family: serif;
 }
 
-このコードで写真をきれいにできる .portofolio1 {
+.portofolio1 {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -163,38 +163,25 @@ body {
 }
 
 .background-title {
-  font-family: serif;
-  opacity: 0.6;
-  padding: 150px 20px 0 700px;
-  font-size: 50px;
+  opacity: 0.75;
+  color: black;
 }
 
 .background-title2 {
-  font-family: serif;
-  opacity: 0.6;
-  font-size: 50px;
-  padding: 0 20px 0 700px;
+  opacity: 0.75;
+  color: black;
 }
 
 .background-title3 {
-  font-family: serif;
-  opacity: 0.6;
-  font-size: 30px;
-  padding: 0 20px 0 700px;
-}
-
-.background-title4 {
-  font-family: serif;
-  opacity: 0.6;
-  font-size: 30px;
-  padding: 0 20px 0 700px;
-}
-
-.footer-title {
-  font-family: serif;
+  opacity: 0.8;
+  color: black;
 }
 
 .drawer-hamburger:focus {
+  outline: none;
+}
+
+.modal-header .close:focus {
   outline: none;
 }
 
@@ -229,27 +216,12 @@ body {
 .mast {
   position: relative;
   display: flex;
-  align-items: center;
   width: 100%;
-  height: 100vh;
   color: #fff;
-  background-color: #111;
-}
-
-.mast:after {
-  z-index: 0;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(17, 17, 17, 0.9);
-}
-
-.mast > header {
-  z-index: 2;
-  position: relative;
+  background-image: url("/img/IMG_2666.jpg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100%;
 }
 
 .mast__bg {
@@ -257,7 +229,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -1358,6 +1329,47 @@ body {
   100% {
     opacity: 0.7;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@media (min-width: 769px) {
+  .mast {
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mast__header {
+    padding: 30px 20px 400px 550px;
+  }
+
+  .background-title {
+    font-size: 30px;
+  }
+
+  .background-title2 {
+    font-size: 30px;
+  }
+
+  .background-title3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mast {
+    height: 215px;
+  }
+
+  .background-title {
+    font-size: 10px;
+  }
+
+  .background-title2 {
+    font-size: 10px;
+  }
+
+  .background-title3 {
+    font-size: 10px;
   }
 }
 
