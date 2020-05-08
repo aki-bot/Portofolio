@@ -29,7 +29,7 @@ Route::group(['prefix' =>'admin','middleware' => 'auth'],function(){
 //noteの命令コード
 Route::get('note/index', 'NoteController@index');
 //フロントのビューファイルの命令文
-Route::get('profile/index','ProfileController@index');
+Route::get('profile','ProfileController@index');
 
 Route::post('contact/create','ContactController@create');
 

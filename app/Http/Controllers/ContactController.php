@@ -29,7 +29,7 @@ class ContactController extends Controller
       //一ページのWebページにお問い合わせフォームをつける時には#をつけることによってレダイレクト先を変えることができる
       //スラッシュいらない
       //バリデーションが正常に動作した時の行先
-      return redirect('profile/index');
+      return redirect('profile');
       //('profile/index?contact=contact');
       //?はパラメーターの追加
     

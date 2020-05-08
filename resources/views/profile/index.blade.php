@@ -43,8 +43,9 @@ May today be a happy day
                             <li><a class="drawer-menu-item" href="#about">About</a></li>
                             <li><a class="drawer-menu-item" href="#portfolio">Portfolio</a></li>
                             <li><a class="drawer-menu-item" href="#service">Service</a></li>
-                            <li><a href="{{ action('NoteController@index') }}" class="drawer-menu-item">Note</a></li>
                             <li><a class="drawer-menu-item" href="#contact">Contact</a></li>
+                            <hr color="#c0c0c0" width="30%">
+                            <li><a href="{{ action('NoteController@index') }}" class="drawer-menu-item">Note</a></li>
                     </ul>
                 </nav>
                 <!-- ドロワーメニューの利用宣言 -->
@@ -59,7 +60,7 @@ May today be a happy day
 
 {{-- <div class="conteiner" id="about"> --}}
     {{--animatedは必ず必要。次のコードでアニメーションを指定している。最後のコードで細かい指示を出している--}}
-    <div class="detail">
+    <div class="detail" id="about">
         <h1 class="scroll-animation text-fadein contact-title service-title about-title"><span>ABOUT</span></h1>
     </div>
 
@@ -114,8 +115,8 @@ May today be a happy day
         <div class="row">
     <div class="col-md-6 col-sm-12">
 <!-- 切り替えボタンの設定 -->
-<img class="portofolio1 img-fluid" src="/img/portofolio1.png" data-toggle="modal" data-target="#exampleModalScrollable">
-<h6 class="seikabutu">-制作日-2020/04/15　<span class="tag">クリック</span></h6>
+<img class="portofolio1 img-fluid" src="/img/スクリーンショット 2020-05-06 22.16.14.png" data-toggle="modal" data-target="#exampleModalScrollable">
+<h6 class="seikabutu">-制作日-2020/04/15　<span class="tag">画像をクリック</span></h6>
 <!-- モーダルの設定 -->
 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -129,18 +130,27 @@ May today be a happy day
       <div class="modal-body">
         <!--ここに内容を書いていく-->
         【タイトル】<br>
-            SaloudsCocktails<br>
+            AlegríaCocktails<br>
+            <br>
         【サイトについて】<br>
             雰囲気に合ったカクテルを探すことができるWebアプリケーション<br>
+            <br>
         【経緯】<br>
-            私がしているアルバイトではお酒をよく提供していることから、ウイスキーやワイン、カクテルなど多くのお酒を知ることができました。<br>
-            しかし来てくださるお客様の中には普段からお酒を飲む方や全く飲まれない方など人それぞれです。<br>
-            そんな中、このサイトを通じて友達との時間や大切な人との特別な時間などその時に合ったお酒でもっと楽しい時間になれば良いなと思いこのサイトをつくりました。<br>
-            初めて作ったWebアプリケーションで、デザイン性にはかける部分がありますが、フロントエンドではなくサーバーサイド側を実際に開発をすることで学習を進めました。<br>
-        【使用言語】<br>
+            僕がアルバイトをしているところではカクテルやウイスキー、ワインなど多くの種類のお酒を提供しています。<br>
+            そのため様々な種類のお酒を知ることができました。<br>
+            しかし、実際に来てくださるお客様の中には、お酒が好きで詳しい方や普段から飲まないことからあまり詳しくない方など人によって違います。<br>
+            このサイトでは自分に合ったカクテルを見つけることによって、友達と過ごす時間も、特別な人と過ごす時間もより良い時間になればいいなと思い開発しました。<br>
+            <br>
+        【感想】<br>
+            初めて開発したことから完成させることで精一杯で、デザイン性が優れているものではありませんが、開発の流れやPHPの仕組みを理解することができました。<br>
+            またプログラミングをしてみて難しいと感じると同時にその楽しさも感じることができました。<br>
+            まだまだ理解不足なことが多くありますが、楽しみにながら進めていきたいと思います。<br>
+            <br>
+        【主な使用言語】<br>
             PHP / HTML / CSS<br>
+            <br>
         【URL】<br>
-            https://peaceful-wave-97097.herokuapp.com/
+            <a href="https://sheltered-inlet-31794.herokuapp.com/">https://sheltered-inlet-31794.herokuapp.com/</a>
      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -155,8 +165,8 @@ May today be a happy day
 
 <div class="col-md-6 col-sm-12">
 <!-- 切り替えボタンの設定 --><!--データターゲットでどこの文を読み込むか決めている-->
-<img class="portofolio2 img-fluid" src="/img/スクリーンショット 2020-05-05 0.40.42.png" data-toggle="modal" data-target="#example2ModalScrollable">
-<h6 class="seikabutu">-制作日-2020/05/05　<span class="tag">クリック</span></h6>
+<img class="portofolio2 img-fluid" src="/img/スクリーンショット 2020-05-06 22.17.40.png" data-toggle="modal" data-target="#example2ModalScrollable">
+<h6 class="seikabutu">-制作日-2020/05/05　<span class="tag">画像をクリック</span></h6>
 <!-- モーダルの設定 -->
 <!--idが同じだと同じ内容になってしまう-->
 <div class="modal fade" id="example2ModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -171,17 +181,25 @@ May today be a happy day
       <div class="modal-body">
         <!--ここに内容を書いていく-->
         【タイトル】<br>
-            Portofolioの紹介サイト<br>
+            WELCOME TO MY PORTOFOLIO<br>
+            <br>
         【サイトについて】<br>
-            作成したポートフォリオをまとめたWebサイト<br>
+            ポートフォリオをまとめたWebサイト<br>
+            <br>
         【経緯】<br>
-            PHPを使うことによって「Webアプリケーション」と「Webサイト」を作ることができます。<br>
-            そのため一つ目の成果物である「Webアプリケーション」ではなく、「Webサイト」を作ることで、PHPの理解を深めていきたいと考え<br>
-            開発を進めていきました。<br>
-            また一つ目の成果物では、javascriptやjQueryを使うことなく文字に動的なプログラムを指示することはありませんでした。<br>
-            なので、このWebサイトでは文字に動きを加えると同時に、Bootstrapの使い方を意識して開発することで、レスポンシブに関する考えを同時に知ることができました。<br>
-        【使用言語】<br>
-            PHP / HTML / CSS /　javescript<br>
+            Webに適したPHPの言語では「Webアプリケーション」と「Webサイト」を作ることができます。<br>
+            そのため、1つ目の成果物では「Webアプリケーション」を開発したことから、次は「Webサイト」を作ることによってPHPに対する理解を深めたいと考え作り始めました。<br>
+            またこれまでの学生生活では、自分が思っていたよりもいろんな人と関われたり、その人たちの価値観に触れることができました。<br>
+            そして僕のこれまでの経験のなかで、僕に力を貸してくれた人に感謝の気持ちをWebサイトを通して伝えたいと思ったことが作成するきっかけとなりました。<br>
+            <br>
+        【感想】<br>
+            1つ目のWebアプリケーションでは、完成させることに必死でJavaScriptやjQueryを使い文字に動きを入れてみたりすることができませんでした。<br>
+            なので今回は前回で得たことをできる限り活かしながら、新しいことに取り組んでいきました。<br>
+            また開発を進めていくうちに、最初に比べてエラーが出たときの対処の仕方や検索の仕方などプログラミングをする上で大切にことを意識しながらできたことは良かったです。<br>
+            何事も興味のあることに対して、昨日よりできることが少しでも増えるように意識しながら行動していきたいと思いました。<br>
+        <br>
+        【主な使用言語】<br>
+            PHP / HTML / CSS / JaveScript<br>
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -240,50 +258,56 @@ May today be a happy day
             </ul>
             @endif                 --}}
             <div class="common-flex aline-center form-group">
-                <div class="col-4 form-essential seattle-form__col-label">
-                    <label for="company-name" class="col-form-label contact-this">名前
+                <div class="contact-title form-essential seattle-form__col-label">
+                    <label for="company-name" class="col-form-label contact-this text-center">名前
                         <span class="tag required" style="margin: 0;">必須</span></label>
                 </div>
-            <div class="col-8">
+            <div class="contact-title">
               {{--value="{{ old('name') }}" --}}
                 <span class="relative"><br>
-                <span class="wpcf7-form-control-wrap company-name"><input type="text" required name="name" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control seattle-form__input" aria-required="true" aria-invalid="false"></span><br>
+                    {{--wpcf7-form-control wpcf7-text wpcf7-validates-as-required (Contact Form7にて指定されているclass名)--}}
+                <span class="wpcf7-form-control-wrap company-name"><input type="text" required name="name" size="40" class="form-content seattle-form__input" aria-required="true" aria-invalid="false"></span><br>
                 </span>
             </div>
-                <div class="col-4 form-essential seattle-form__col-label">
+                <div class="contact-title form-essential seattle-form__col-label">
                     <label for="text" class="col-form-label contact-this">メールアドレス
                         <span class="tag required" style="margin: 0;">必須</span></label>
                 </div>
-                <div class="col-8">
+                <div class="contact-title">
                     <span class="relative"><br>
                         {{--old関数についてはバリデーションをする際に他の項目でバリデーションが合った時に正常な内容を保存しておくために使う--}}
-                        <span class="wpcf7-form-control-wrap email"><input type="text" required name="mail" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control seattle-form__input" aria-required="true" aria-invalid="false"></span><br>
+                        <span class="wpcf7-form-control-wrap email">
+                            <input type="text" required name="mail" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-content seattle-form__input" aria-required="true" aria-invalid="false"></span><br>
                     </span>
                 </div>
-                <div class="col-4 form-essential seattle-form__col-label">
+                <div class="contact-title form-essential seattle-form__col-label">
                     <label for="phone-number" class="col-form-label contact-this">電話番号</label>
                 </div>
-                <div class="col-8">
+                <div class="contact-title">
                     <span class="relative"><br>
-                        <span class="wpcf7-form-control-wrap phone-number"><input type="text" name="phon" size="40" class="wpcf7-form-control wpcf7-text form-control seattle-form__input" aria-invalid="false"></span><br>
+                        <span class="wpcf7-form-control-wrap phone-number">
+                            <input type="text" name="phon" size="40" class="wpcf7-form-control wpcf7-text form-content seattle-form__input" aria-invalid="false"></span><br>
+                            
                     </span>
                 </div>
-                <div class="col-4 form-essential seattle-form__col-label label-align-top">
+                <div class="contact-title form-essential seattle-form__col-label label-align-top">
                     <label for="textarea" class="col-form-label contact-this">お問い合わせ内容
                         <span class="tag">必須</span>
                     </label>
                 </div>
-                <div class="col-8">
+                <div class="contact-title">
                   {{--requiredで仮に入力データがなければ入力してくださいと指示を出すことができる--}}
                     <span class="relative inquiry-type"><br>{{--wpcf7-form-control特に変わらず--}}{{--wpcf7-textarea特に変わらず--}}{{--form-controlこれでレイアウトがきれいなる--}}{{-- aria-invalid="false"変化なし--}}{{--inquiry-content変化なし--}}
-                        <span class="wpcf7-form-control-wrap"><textarea name="body" required cols="40" rows="10" class="form-control"></textarea></span><br>
+                        <span class="wpcf7-form-control-wrap">
+                            <textarea name="body" required cols="40" rows="10" class="text-content"></textarea></span><br>
                     </span>
                 </div>
                         {{ csrf_field() }}
-                <div class="col-8">
+                <div class="contact-title">
                     {{-- <a class="btn btn-primary" role="button">送信</a> --}}
-                    <input type="submit" class="btn btn-primary">
+                    <input type="submit" class="btn btn-primary" role="button">
                 </div>
+                @csrf
 </form>
 <footer>
     <div class="container">
