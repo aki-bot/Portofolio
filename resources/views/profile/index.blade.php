@@ -15,7 +15,7 @@
                                 <p class="mast__text js-spanize background-title3" style="font-family: serif;">
                                 Thanks to all who have helped me so far.
 And I expect the opportunity of encounters in the future.
-May today be a happy day
+May today be a happy day.
                                 </p>
                             </div>
                         
