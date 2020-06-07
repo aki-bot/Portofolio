@@ -59,26 +59,43 @@ body {
 
 .about-title {
   text-align: center;
+  padding: 50px;
   margin: 50px;
   font-family: serif;
+  position: relative;
 }
 
-.portfolio-title {
-  text-align: center;
-  margin: 50px;
+.about-title2 {
   font-family: serif;
-}
-
-.service-title {
+  opacity: 0.1;
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(50% - 25px);
   text-align: center;
-  margin: 50px;
-  font-family: serif;
+  font-weight: bold;
+  line-height: 50px;
 }
 
 .contact-title {
   text-align: center;
   margin: 50px;
   font-family: serif;
+  position: relative;
+}
+
+.contact-title2 {
+  font-family: serif;
+  opacity: 0.1;
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(50% - 25px);
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
 }
 
 .about-a {
@@ -1433,5 +1450,9 @@ body {
     height: 10%;
     width: 80%;
   }
+}
+
+.service-wrapper {
+  margin-bottom: 50px;
 }
 

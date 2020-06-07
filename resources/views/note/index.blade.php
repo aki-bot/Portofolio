@@ -102,7 +102,7 @@
 </div>
 <footer>
     <div class="container text-center">
-      <p class="footer-title">＠Daichi Akiyama</p>
+      <p class="footer-title" style="font-family: serif;">＠Daichi Akiyama</p>
     </div>
   </footer>
 @endsection

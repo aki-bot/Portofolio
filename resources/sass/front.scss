@@ -76,32 +76,48 @@ body {
 
 
 
+
+
+
+
 .about-title{
     text-align: center;
+    padding: 50px;
     margin: 50px;
     font-family: serif;
+    position: relative;
+}
+.about-title2{
+  font-family: serif;
+  opacity: 0.1;
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    font-weight: bold; 
+    line-height: 50px;
 }
 
-// .about-detail{
-//     padding: 0 0 0 150px;
-    
-// }
-
-.portfolio-title{
-    text-align: center;
-    margin: 50px;
-    font-family: serif;
-}
-
-.service-title{
-    text-align: center;
-    margin: 50px;
-    font-family: serif;
-}
 .contact-title{
     text-align: center;
     margin: 50px;
+    
     font-family: serif;
+    position: relative;
+}
+.contact-title2{
+  font-family: serif;
+  opacity: 0.1;
+  font-size: 100px;
+  position: absolute;
+  width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    font-weight: bold; 
+    line-height: 50px;
 }
 
 
@@ -412,6 +428,8 @@ body {
     height: 50%;
     width: 50%;
   }
+
+
 }
 
 //スマホ対応
@@ -466,14 +484,8 @@ body {
       height: 10%;
       width: 80%;
     }
-
-    
 }
 
-
-
-
-
-
-
-
+.service-wrapper{
+  margin-bottom: 50px;
+}

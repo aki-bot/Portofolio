@@ -1,10 +1,6 @@
 @extends('layouts.front')
 @section('title','Welcome to my portofolio')
 @section('content')
-
-
-
-
             <div class="Home-wrapper" id="home">
                 <section class="mast">
                     <header class="mast__header">
@@ -57,15 +53,13 @@ May today be a happy day.
 
 
 
-
-{{-- <div class="conteiner" id="about"> --}}
-    {{--animatedは必ず必要。次のコードでアニメーションを指定している。最後のコードで細かい指示を出している--}}
     <div class="detail" id="about">
-        <h1 class="scroll-animation text-fadein contact-title service-title about-title"><span>ABOUT</span></h1>
-    </div>
-
 <div class="container">
     <div class="row">
+    <div class="col-lg-12 text-center">
+                    <h2 class="scroll-animation text-fadein about-title"><span>ABOUT</span></h2>
+                    <h1 class="about-title2"><span>ABOUT</span></h1>
+                </div>
         <div class="col-md-6 col-sm-12">
             <img class="about-img img-fluid" src="/img/IMG_0979.JPG"class="backgroun-img">
         </div>
@@ -108,11 +102,15 @@ May today be a happy day.
 
 
 <div class="portfolio" id="portfolio">
-    <div class="portofoliodayo">
+    <!-- <div class="portofoliodayo">
         <h1 class="scroll-animation text-fadein contact-title portfolio-title"><span>PORTFOLIO</span></h1>
-    </div>
+    </div> -->
     <div class="container">
         <div class="row">
+        <div class="col-lg-12 text-center">
+                    <h2 class="scroll-animation text-fadein about-title"><span>PORTFOLIO</span></h2>
+                    <h1 class="about-title2"><span>PORTFOLIO</span></h1>
+                </div>
     <div class="col-md-6 col-sm-12">
 <!-- 切り替えボタンの設定 -->
 <img class="portofolio1 img-fluid" src="/img/スクリーンショット 2020-05-06 22.16.14.png" data-toggle="modal" data-target="#exampleModalScrollable">
@@ -212,13 +210,94 @@ May today be a happy day.
 </div>
 </div>
 
-
-<div class="service-wrapper" id="service">
-    <div class="container">
-        <h1 class="scroll-animation text-fadein contact-title service-title"><span>SERVICE</span></h1>
-    </div>
+<div class="portfolio" id="portfolio">
     <div class="container">
         <div class="row">
+    <div class="col-md-6 col-sm-12">
+<!-- 切り替えボタンの設定 -->
+<img class="portofolio1 img-fluid" src="/img/ruby.png" data-toggle="modal" data-target="#example3ModalScrollable">
+<h6 class="seikabutu">-制作日-2020/06/5　<span class="tag">画像をクリック</span></h6>
+<!-- モーダルの設定 -->
+<div class="modal fade" id="example3ModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="example3ModalScrollableTitle">Portfolio【No.3】</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--ここに内容を書いていく-->
+        【タイトル】<br>
+            How was your day<br>
+            <br>
+        【サイトについて】<br>
+            Ruby on railsの模写<br>
+            <br>
+        【経緯】<br>
+            来年から入社する予定の会社が特定のプログラミング言語ではなく、案件によって使用する言語も変わってくるため<br>
+            模写でRubyに触れることで、PHPとの違いなどを理解しました。<br>
+            
+            <br>
+        【主な使用言語】<br>
+            Ruby / HTML / CSS<br>
+            <br>
+        
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="col-md-6 col-sm-12">
+<!-- 切り替えボタンの設定 --><!--データターゲットでどこの文を読み込むか決めている-->
+<img class="portofolio2 img-fluid" src="/img/coming.png" data-toggle="modal" data-target="#example4ModalScrollable">
+<h6 class="seikabutu">-制作日-　<span class="tag">画像をクリック</span></h6>
+<!-- モーダルの設定 -->
+<!--idが同じだと同じ内容になってしまう-->
+<div class="modal fade" id="example4ModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Portfolio[No.4]</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!--ここに内容を書いていく-->
+        【タイトル】<br>
+        coming soon
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="service-wrapper" id="service">
+        <!-- <h1 class="scroll-animation text-fadein contact-title service-title"><span>SERVICE</span></h1> -->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12 text-center">
+                    <h2 class="scroll-animation text-fadein about-title"><span>SERVICE</span></h2>
+                    <h1 class="about-title2"><span>SERVICE</span></h1>
+                </div>
             <div class="col-md-4 col-sm-12 service-detail">
                 <h2 class="service-heading text-center">PHP/MySQL</h2>
                 <p class="service-detail py-2">
@@ -247,7 +326,8 @@ May today be a happy day.
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1 class="scroll-animation text-fadein contact-title"><span>CONTACT</span></h1>
+                    <h2 class="scroll-animation text-fadein contact-title"><span>CONTACT</span></h2>
+                    <h1 class="contact-title2"><span>CONTACT</span></h1>
                 </div>
             </div>
             {{-- @if (count($errors) > 0)
@@ -259,7 +339,7 @@ May today be a happy day.
             @endif                 --}}
             <div class="common-flex aline-center form-group">
                 <div class="contact-title form-essential seattle-form__col-label">
-                    <label for="company-name" class="col-form-label contact-this text-center">名前
+                    <label for="company-name" class="col-form-label contact-this">名前
                         <span class="tag required" style="margin: 0;">必須</span></label>
                 </div>
             <div class="contact-title">
@@ -318,7 +398,7 @@ May today be a happy day.
   </div>
   </div>
     <div class="container text-center">
-      <p class="footer-title">＠Daichi Akiyama</p>
+      <p class="footer-title" style="font-family: serif;">＠Daichi Akiyama</p>
     </div>
   </footer>
 @endsection

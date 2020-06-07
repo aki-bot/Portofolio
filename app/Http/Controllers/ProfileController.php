@@ -13,5 +13,9 @@ class ProfileController extends Controller
       return view('profile/index');
       
   }
+
+  public function add(){
+    return view('profile/add');
+  }
         
 }

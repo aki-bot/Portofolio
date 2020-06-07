@@ -38,3 +38,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('like/create','LikesController@create');
+
+Route::get('profile/add','ProfileController@add');
