@@ -4,14 +4,13 @@
             <div class="Home-wrapper" id="home">
                 <section class="mast">
                     <header class="mast__header">
-                            
                                 <h2 class="mast__title js-spanize background-title" style="font-family: serif;">Welcome to my portofolio.</h2> 
                                 <h2 class="mast__title js-spanize background-title2" style="font-family: serif;">-Daichi Akiyama-</h2>
                             <div class="col-sm-6 col-12">
                                 <p class="mast__text js-spanize background-title3" style="font-family: serif;">
-                                Thanks to all who have helped me so far.
-And I expect the opportunity of encounters in the future.
-May today be a happy day.
+                                I realized It's a very small thing I can do,
+so now I really thank all who have helped me so far,
+and I expect the opportunity of encounters in the future.
                                 </p>
                             </div>
                         
@@ -147,8 +146,8 @@ May today be a happy day.
         【主な使用言語】<br>
             PHP / HTML / CSS<br>
             <br>
-        【URL】<br>
-            <a href="https://sheltered-inlet-31794.herokuapp.com/">https://sheltered-inlet-31794.herokuapp.com/</a>
+        <!-- 【URL】<br>
+            <a href="https://sheltered-inlet-31794.herokuapp.com/">https://sheltered-inlet-31794.herokuapp.com/</a> -->
      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
@@ -163,7 +162,7 @@ May today be a happy day.
 
 <div class="col-md-6 col-sm-12">
 <!-- 切り替えボタンの設定 --><!--データターゲットでどこの文を読み込むか決めている-->
-<img class="portofolio2 img-fluid" src="/img/スクリーンショット 2020-05-06 22.17.40.png" data-toggle="modal" data-target="#example2ModalScrollable">
+<img class="portofolio2 img-fluid" src="/img/sample1.png" data-toggle="modal" data-target="#example2ModalScrollable">
 <h6 class="seikabutu">-制作日-2020/05/05　<span class="tag">画像をクリック</span></h6>
 <!-- モーダルの設定 -->
 <!--idが同じだと同じ内容になってしまう-->
@@ -233,13 +232,9 @@ May today be a happy day.
             How was your day<br>
             <br>
         【サイトについて】<br>
-            Ruby on railsの模写<br>
-            <br>
-        【経緯】<br>
-            来年から入社する予定の会社が特定のプログラミング言語ではなく、案件によって使用する言語も変わってくるため<br>
-            模写でRubyに触れることで、PHPとの違いなどを理解しました。<br>
-            
-            <br>
+            Ruby on Railsの模写<br>
+            インスタグラムのような、周りの人と共有したい写真を投稿できるWebサービスです。<br>
+<br>
         【主な使用言語】<br>
             Ruby / HTML / CSS<br>
             <br>
@@ -273,7 +268,7 @@ May today be a happy day.
       </div>
       <div class="modal-body">
         <!--ここに内容を書いていく-->
-        【タイトル】<br>
+        
         coming soon
     </div>
       <div class="modal-footer">
@@ -343,7 +338,7 @@ May today be a happy day.
                         <span class="tag required" style="margin: 0;">必須</span></label>
                 </div>
             <div class="contact-title">
-              {{--value="{{ old('name') }}" --}}
+              
                 <span class="relative"><br>
                     {{--wpcf7-form-control wpcf7-text wpcf7-validates-as-required (Contact Form7にて指定されているclass名)--}}
                 <span class="wpcf7-form-control-wrap company-name"><input type="text" required name="name" size="40" class="form-content seattle-form__input" aria-required="true" aria-invalid="false"></span><br>

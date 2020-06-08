@@ -174,12 +174,16 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+  width: 900px;
+  height: 300px;
 }
 
 .portofolio2 {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+  width: 900px;
+  height: 300px;
 }
 
 .drawer-hamburger:focus {
@@ -1348,19 +1352,19 @@ body {
   }
 
   .background-title {
-    font-size: 30px;
+    font-size: 35px;
     opacity: 0.8;
     color: black;
   }
 
   .background-title2 {
-    font-size: 30px;
+    font-size: 35px;
     opacity: 0.8;
     color: black;
   }
 
   .background-title3 {
-    font-size: 25px;
+    font-size: 30px;
     opacity: 0.8;
     color: black;
   }

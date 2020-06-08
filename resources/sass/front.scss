@@ -198,11 +198,15 @@ body {
 .portofolio1{
   object-fit: cover;
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.6);
+  width: 900px;
+  height: 300px;
 }
 .portofolio2{
   object-fit: cover;
   // box-shadow: 10px 10px;
   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.6);
+  width: 900px;
+  height: 300px;
 }
 
 //上書きすることで打ち消し合う
@@ -381,19 +385,19 @@ body {
     padding: 30px 20px 400px 550px;
   }
   .background-title{
-    font-size: 30px;  
+    font-size: 35px;  
     opacity: 0.8;
     color: black;
     // font-weight: 550;
   }
   .background-title2{
-    font-size: 30px;
+    font-size: 35px;
     opacity: 0.8;
     color: black;
     // font-weight: 550;
   }
   .background-title3{
-    font-size: 25px;
+    font-size: 30px;
     opacity: 0.8;
     color: black;
     // font-weight: 550;
