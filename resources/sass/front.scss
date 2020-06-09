@@ -438,6 +438,46 @@ body {
 
 //スマホ対応
 @media (max-width: 768px) {
+
+  .about-title{
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+    font-family: serif;
+    position: relative;
+}
+.about-title2{
+  font-family: serif;
+  opacity: 0.1;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    font-weight: bold; 
+    line-height: 50px;
+}
+
+.contact-title{
+    text-align: center;
+    margin: 50px;
+    
+    font-family: serif;
+    position: relative;
+}
+.contact-title2{
+  font-family: serif;
+  opacity: 0.1;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    font-weight: bold; 
+    line-height: 50px;
+}
 	.mast {
     height: 215px;
     }
